@@ -7,19 +7,19 @@
 # Функцию hex используйте для проверки своего результата.
 
 
-# num = int(input('Введите число в десятичной системе: '))
-# def self_hex(number: int) -> str:
-#     if not number:
-#         return '0x0'
-#     result = ''
-#     hex_letters = list('0123456789abcdef')
-#     while number > 0:
-#         result = hex_letters[number % 16] + result
-#         number //= 16
-#     return '0x' + result
-# print(f'Шестнадцатеричное представление -> {self_hex(num)}')
-#
-# print(f'Проверка функция hex -> \t\t{hex(num)}')
+num = int(input('Введите число в десятичной системе: '))
+def self_hex(number: int) -> str:
+    if not number:
+        return '0x0'
+    result = ''
+    hex_letters = list('0123456789abcdef')
+    while number > 0:
+        result = hex_letters[number % 16] + result
+        number //= 16
+    return '0x' + result
+print(f'Шестнадцатеричное представление -> {self_hex(num)}')
+
+print(f'Проверка функция hex -> \t\t{hex(num)}')
 
 
 # Задача 2.
@@ -29,22 +29,24 @@
 
 
 from fractions import Fraction
-def add_and_multiply_fractions(str1, str2):
- str1 = Fraction(str1)
- str2 = Fraction(str2)
 
- sum_fraction = str1 + str2
- multiply_fraction = str1 * str2
+def add_and_multiply_fractions(STR1, STR2):
+ STR1 = Fraction(STR1)
+ STR2 = Fraction(STR2)
+
+ sum_fraction = STR1 + STR2
+ multiply_fraction = STR1 * STR2
 
  sum_fraction_str = f"{sum_fraction.numerator}/{sum_fraction.denominator}"
  multiply_fraction_str = f"{multiply_fraction.numerator}/{multiply_fraction.denominator}"
 
  return sum_fraction_str, multiply_fraction_str
 
-str1 = input("Введите первую дробь вида a/b: ")
-str2 = input("Введите вторую дробь вида a/b: ")
+STR1 = input("Введите первую дробь вида a/b: ")
+STR2 = input("Введите вторую дробь вида a/b: ")
 
-sum_fraction, multiply_fraction = add_and_multiply_fractions(str1, str2)
+sum_fraction, multiply_fraction = add_and_multiply_fractions(STR1, STR2)
 
 print("Сумма дробей:", sum_fraction)
 print("Произведение дробей:", multiply_fraction)
+
