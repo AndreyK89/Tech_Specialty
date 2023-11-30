@@ -66,7 +66,7 @@ def add_bank(cash: float) -> None:
     count += 1
     if count % 3 == 0:
         bank = bank + percent_add * bank
-        print("Начислены проценты в размере: ", percent_add * bank, "y.e.")
+        print("Начислены 3% в размере: ", percent_add * bank, "y.e.")
 
 def take_bank(cash: float) -> None:
     global bank
@@ -76,25 +76,25 @@ def take_bank(cash: float) -> None:
 
     if cash * percent_take < 30:
         bank -= 30
-        print("Списаны проценты за cash: ", 30, "y.e.")
+        print("Списаны 1.5% за cash: ", 30, "y.e.")
     elif cash * percent_take > 600:
         bank -= 600
-        print("списаны проценты за cash: ", 600, "y.e.")
+        print("списаны 1.5% за cash: ", 600, "y.e.")
     else:
         bank -= cash * percent_take
-        print("Списаны проценты за cash: ", cash * percent_take, "y.e.")
+        print("Списаны 1.5% за cash: ", cash * percent_take, "y.e.")
     if count % 3 == 0:
         bank = bank + percent_add * bank
-        print("Начислены проценты в размере: ", percent_add * bank, "y.e.")
+        print("Начислены 3% в размере: ", percent_add * bank, "y.e.")
 
 
 def exit_bank():
-    print("Рады вас видетеь снова!\n")
+    print("Рады видеть вас снова!\n")
     exit()
 
 def check_bank() -> int:
     while True:
-        cash = int(input("Введите сумму опреации кратно 50\n"))
+        cash = int(input("Введите сумму операции кратно 50\n"))
         if cash % 50 == 0:
             return cash
 
@@ -106,24 +106,24 @@ while True:
     if action == '1':
         if bank > 5_000_000:
             bank = bank - bank * percent_tax
-            print("Списан налог на богатство: ", bank * percent_tax, "y.e.")
+            print("Списано 10% налог на богатство: ", bank * percent_tax, "y.e.")
         cash = check_bank()
         if cash < bank:
             take_bank(cash)
 
             list_operation.append([str(date.today()), -1 * cash])
         else:
-            print("no money\n")
+            print("Нельзя снять >" , bank, "y.e.")
         if bank > 5_000_000:
             bank = bank - bank * percent_tax
-            print("Списан налог на богатство: ", bank * percent_tax, "y.e.")
+            print("Списано 10% налог на богатство: ", bank * percent_tax, "y.e.")
         print("Баланс = ", bank, "y.e.")
     elif action == '2':
         cash = check_bank()
         add_bank(cash)
         if bank > 5_000_000:
             bank = bank - bank * percent_tax
-            print("Списан налог на богатство: ", bank * percent_tax, "y.e.")
+            print("Списано 10% налог на богатство: ", bank * percent_tax, "y.e.")
         print("Баланс = ", bank, "y.e.")
 
         list_operation.append([str(date.today()), cash])
