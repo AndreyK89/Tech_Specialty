@@ -28,24 +28,59 @@ print(f'Проверка функция hex -> \t\t{hex(num)}')
 
 
 from fractions import Fraction
+import math
 
-def add_and_multiply_fractions(STR1, STR2):
- STR1 = Fraction(STR1)
- STR2 = Fraction(STR2)
 
- sum_fraction = STR1 + STR2
- multiply_fraction = STR1 * STR2
+def shortenFraction(n: int, m: int):                                # Переделал без fractions.
+    if n > m:
+        k = n
+    else:
+        k = m
+    while k != 1:
+        if n % k == 0 and m % k == 0:
+            return str(n // k) + "/" + str(m // k)
+        else:
+            k -= 1
+    return str(n) + "/" + str(m)
 
- sum_fraction_str = f"{sum_fraction.numerator}/{sum_fraction.denominator}"
- multiply_fraction_str = f"{multiply_fraction.numerator}/{multiply_fraction.denominator}"
 
- return sum_fraction_str, multiply_fraction_str
+def sum_fractions(str_1, str_2):
+    num_1 = str_1.split("/")
+    num_2 = str_2.split("/")
+    lcm_fraction = math.lcm(int(num_1[1]), int(num_2[1]))
+    numeratorFraction_1 = int(lcm_fraction / int(num_1[1]) * int(num_1[0]))
+    numeratorFraction_2 = int(lcm_fraction / int(num_2[1]) * int(num_2[0]))
+    return shortenFraction(numeratorFraction_1 + numeratorFraction_2, lcm_fraction)
 
-STR1 = input("Введите первую дробь вида a/b: ")
-STR2 = input("Введите вторую дробь вида a/b: ")
 
-sum_fraction, multiply_fraction = add_and_multiply_fractions(STR1, STR2)
+def mult_fraction(str1, str2):
+    num_1 = str1.split("/")
+    num_2 = str2.split("/")
+    #return int(num_1[0]) * int(num_2[0]) / (int(num_1[1]) * int(num_2[1]))
+    return shortenFraction(int(num_1[0]) * int(num_2[0]), int(num_1[1]) * int(num_2[1]))
 
-print("Сумма дробей:", sum_fraction)
-print("Произведение дробей:", multiply_fraction)
+
+def check_fraction(str1, str2, operation):              # Fraction
+    num_1 = str1.split("/")
+    num_2 = str2.split("/")
+    if operation == "*":
+        return Fraction(int(num_1[0]), int(num_1[1])) * Fraction(int(num_2[0]), int(num_2[1]))
+    elif operation == "+":
+        return Fraction(int(num_1[0]), int(num_1[1])) + Fraction(int(num_2[0]), int(num_2[1]))
+    elif operation == "-":
+        return Fraction(int(num_1[0]), int(num_1[1])) - Fraction(int(num_2[0]), int(num_2[1]))
+    else:
+        return Fraction(int(num_1[0]), int(num_1[1])) / Fraction(int(num_2[0]), int(num_2[1]))
+
+
+str_1 = input("Введите первую дробь вида a/b: ")
+str_2 = input("Введите вторую дробь вида a/b: ")
+
+print("Расчет по программе:")
+print(f'{str_1} * {str_2} = {mult_fraction(str_1, str_2)}')
+print(f'{str_1} + {str_2} = {sum_fractions(str_1, str_2)}')
+
+print("\nПроверка по Fraction:")
+print(f'{str_1} * {str_2} = {check_fraction(str_1, str_2, "*")}')
+print(f'{str_1} + {str_2} = {check_fraction(str_1, str_2, "+")}')
 
