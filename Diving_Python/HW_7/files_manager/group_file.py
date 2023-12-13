@@ -7,27 +7,27 @@
 import os
 from pathlib import Path
 import shutil
-from files_manager.create_dir import create_dir
+from create_dir import create_dir
 
 def group_file_in_dir(dir_source: str, dir_rezult: str):
 
     os.chdir("..")
     create_dir(dir_rezult)
 
-    folder_track = Path(Path.cwd() / dir_source)          #C:\Users\BETEPOK\Documents\Tech_Specialty\Diving_Python\HW_7\new
-    folder_move = Path(Path.cwd() / dir_rezult)           #C:\Users\BETEPOK\Documents\Tech_Specialty\Diving_Python\HW_7\rezult
+    folder_track = Path(Path.cwd() / dir_source)          # C:\Users\BETEPOK\Documents\Tech_Specialty\Diving_Python\HW_7\new
+    folder_move = Path(Path.cwd() / dir_rezult)           # C:\Users\BETEPOK\Documents\Tech_Specialty\Diving_Python\HW_7\rezult
 
-    files = os.listdir(folder_track)  # список всех файлов директория
+    files = os.listdir(folder_track)                      # список всех файлов директория
 
     for items in files:
-        extension = items.split('.')                #список имени + расширения
+        extension = items.split('.')                      # список имени + расширения
 
         if len(extension) > 1 and (
                 extension[1].lower() == "jpg" or
                 extension[1].lower() == "png" or
                 extension[1].lower() == "svg"):
-            file = str(folder_track) + '\\' + items                     #путь файла в исходном директории
-            new_path = str(folder_move) + "\\Photos\\" + items          #путь файла в новом директории
+            file = str(folder_track) + '\\' + items                     # путь файла в исходном директории
+            new_path = str(folder_move) + "\\Photos\\" + items          # путь файла в новом директории
             print(new_path)
             create_dir(str(folder_move) + "\\Photos\\")                 # создаем новый директорий под группу файлов
 

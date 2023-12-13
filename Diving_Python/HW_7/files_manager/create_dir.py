@@ -12,9 +12,9 @@ import os
 
 
 def create_dir(name_dir: str):
-    #
+
     name = Path(
         Path.cwd() / name_dir)               # C:\Users\BETEPOK\Documents\Tech_Specialty\Diving_Python\HW_7\new
-    if not name.exists():  # проверка на наличие директория
-        name.mkdir()       # создает директорий с именем name_dir в текущей директории
-     # os.chdir(name)      # переходим в созданный каталог сделав его текущим
+    if not name.exists():                    # проверка на наличие директория
+        name.mkdir()                         # создает директорий с именем name_dir в текущей директории
+     # os.chdir(name)                        # переходим в созданный каталог сделав его текущим

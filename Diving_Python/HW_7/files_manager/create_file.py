@@ -11,7 +11,7 @@
 
 '''
 
-from string import ascii_letters    # все буквы латинские abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+from string import ascii_letters             # все буквы латинские abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
 from random import randint, choices, randbytes
 
 def create_file(extension: str, min_len_name: int = 2, max_len_name: int = 5,
