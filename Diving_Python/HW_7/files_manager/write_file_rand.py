@@ -17,4 +17,4 @@ def write_file_random(filename: str, count_lines: int) -> None:
 
 
 
-write_file_random('task_11.txt', 20)
+write_file_random('task_1.txt', 20)
