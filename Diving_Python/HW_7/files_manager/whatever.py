@@ -14,8 +14,8 @@
 '''
 
 def whatever():
-    with (open('task_11.txt', 'r', encoding='utf-8') as f_numbers,
-          open('task_22.txt', 'r', encoding='utf-8') as f_names):
+    with (open('task_1.txt', 'r', encoding='utf-8') as f_numbers,
+          open('task_2.txt', 'r', encoding='utf-8') as f_names):
         numbers = f_numbers.readlines() #[' -945 | 875.661\n', '  375 | 269.492\n', ' -239 | 577.798\n', '  -74 | -659.06
         names = f_names.readlines()     #['Ащллжс\n', 'Еэижцп\n', 'Сглтих\n', 'Шдёг\n', 'Эжтбэт\n', 'Кксшолл\n', 'Ывэч\n',
 
@@ -33,7 +33,7 @@ def whatever():
         else:
             lines_to_write.append(f'{name.lower().rstrip()}; {abs(mult)}\n')
 
-    with open ("task_33.txt", 'w', encoding='utf-8')as f:
+    with open ("task_3.txt", 'w', encoding='utf-8')as f:
         f.writelines(lines_to_write)
 
 whatever()
