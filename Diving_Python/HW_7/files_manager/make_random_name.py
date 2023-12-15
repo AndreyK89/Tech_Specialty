@@ -25,7 +25,7 @@ def make_random_name(amount_of_names: int):
         if any(ch in VOLEWELS for ch in word):          # если есть хотя бы одна гласная в слове
             all_names.append(''.join(word).capitalize() + '\n')
             count += 1
-    with open('task_2.txt', 'a', encoding='utf-8') as f:
+    with open('task_22.txt', 'a', encoding='utf-8') as f:
         f.writelines(all_names)
 
 make_random_name(10)
