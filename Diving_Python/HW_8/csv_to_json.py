@@ -38,4 +38,4 @@ def csv_to_json(file_out: Path, file_in: Path) -> None:
 
 
 if __name__ == '__main__':
-    csv_to_json(Path('file_out.csv'), Path('json_in.json'))
+    csv_to_json(Path('file_out1.csv'), Path('json_in.json'))

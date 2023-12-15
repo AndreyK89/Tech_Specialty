@@ -27,4 +27,4 @@ def pickle_to_csv(file: Path) -> None:
 
 
 if __name__ == '__main__':
-     pickle_to_csv(Path('json_in.pickle'))
+     pickle_to_csv(Path('json_in1.pickle'))

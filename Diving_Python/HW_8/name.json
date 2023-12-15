@@ -1,0 +1,102 @@
+{
+  "C:\\Users\\BETEPOK\\Documents\\Tech_Specialty\\Diving_Python\\HW_8": {
+    "HW_8": {
+      "size": 30,
+      "file_or_dir": "directory"
+    },
+    "csv_to_json.py": {
+      "size": 1979,
+      "file_or_dir": "file"
+    },
+    "csv_to_pickle.py": {
+      "size": 860,
+      "file_or_dir": "file"
+    },
+    "data.json": {
+      "size": 171,
+      "file_or_dir": "file"
+    },
+    "direct_info.py": {
+      "size": 4051,
+      "file_or_dir": "file"
+    },
+    "file_out.csv": {
+      "size": 118,
+      "file_or_dir": "file"
+    },
+    "get_from_user.py": {
+      "size": 2368,
+      "file_or_dir": "file"
+    },
+    "json_in.csv": {
+      "size": 294,
+      "file_or_dir": "file"
+    },
+    "json_in.json": {
+      "size": 589,
+      "file_or_dir": "file"
+    },
+    "json_in.pickle": {
+      "size": 303,
+      "file_or_dir": "file"
+    },
+    "json_to_csv.py": {
+      "size": 1189,
+      "file_or_dir": "file"
+    },
+    "json_to_pickle.py": {
+      "size": 785,
+      "file_or_dir": "file"
+    },
+    "main.py": {
+      "size": 948,
+      "file_or_dir": "file"
+    },
+    "name.csv": {
+      "size": 0,
+      "file_or_dir": "file"
+    },
+    "name.json": {
+      "size": 0,
+      "file_or_dir": "file"
+    },
+    "name.pickle": {
+      "size": 0,
+      "file_or_dir": "file"
+    },
+    "pickle_to_csv.py": {
+      "size": 1102,
+      "file_or_dir": "file"
+    },
+    "README.md": {
+      "size": 1247,
+      "file_or_dir": "file"
+    },
+    "task_3.json": {
+      "size": 297,
+      "file_or_dir": "file"
+    },
+    "txt_to_json.py": {
+      "size": 1082,
+      "file_or_dir": "file"
+    },
+    "__init__.py": {
+      "size": 218,
+      "file_or_dir": "file"
+    }
+  },
+  "C:\\Users\\BETEPOK\\Documents\\Tech_Specialty\\Diving_Python\\HW_8\\HW_8": {
+    "name.csv": {
+      "size": 28,
+      "file_or_dir": "file"
+    },
+    "name.json": {
+      "size": 2,
+      "file_or_dir": "file"
+    },
+    "name.pickle": {
+      "size": 0,
+      "file_or_dir": "file"
+    }
+  }
+}

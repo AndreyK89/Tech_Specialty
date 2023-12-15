@@ -37,4 +37,4 @@ def json_to_csv(file_in: Path, file_out: Path) -> None:
 
 
 if __name__ == '__main__':
-    json_to_csv(Path('data.json'), Path('file_out.csv'))
+    json_to_csv(Path('data1.json'), Path('file_out1.csv'))

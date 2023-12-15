@@ -20,7 +20,7 @@ def add_data(level: int, person_id: int, name: str) -> dict[int, dict[int, str]]
 
 
 def write_json(data: Dict) -> None:
-    file = 'data.json'
+    file = 'data1.json'
     with open(file, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
@@ -55,4 +55,4 @@ def get_from_user(file: Path):
 
 
 if __name__ == "__main__":
-    get_from_user(Path('data.json'))
+    get_from_user(Path('data1.json'))

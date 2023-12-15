@@ -25,4 +25,4 @@ def csv_to_pickle(file: Path) -> None:
               print(pickle.dumps(pickle_list))
 
 if __name__ == '__main__':
-    csv_to_pickle(Path('json_in.csv'))
+    csv_to_pickle(Path('json_in1.csv'))
