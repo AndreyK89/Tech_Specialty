@@ -33,7 +33,7 @@ def whatever():
         else:
             lines_to_write.append(f'{name.lower().rstrip()}; {abs(mult)}\n')
 
-    with open ("task_3.txt", 'w', encoding='utf-8')as f:
+    with open ("task_33.txt", 'w', encoding='utf-8')as f:
         f.writelines(lines_to_write)
 
 whatever()
