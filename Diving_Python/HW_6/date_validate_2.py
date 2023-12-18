@@ -3,10 +3,10 @@
 """
 
 import calendar
-import sys
+from sys import argv
 
 def funcDate():
-    text = input('DD.MM.YYYY - >>> ')
+    text = (input('DD.MM.YYYY - >>> '))
     text = text.split('.')
     month = int(text[1])
     days = calendar.monthrange(int(text[2]), int(text[1]))[1]
@@ -19,11 +19,13 @@ def funcDate():
         a = input('')
         return False
 
-def _vysYear(year):
+def vys_Year(year):
     if calendar.monthrange(year, 2) == 29:
         return True
     else:
         return False
 
-if __name__=='__main__':
-    funcDate()
+
+if __name__ == '__main__':
+#   funcDate()
+    funcDate()(argv[1:])         # Возможность запуска в терминале
