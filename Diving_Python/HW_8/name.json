@@ -1,15 +1,11 @@
 {
   "C:\\Users\\BETEPOK\\Documents\\Tech_Specialty\\Diving_Python\\HW_8": {
-    "HW_8": {
-      "size": 30,
-      "file_or_dir": "directory"
-    },
     "csv_to_json.py": {
-      "size": 1979,
+      "size": 1980,
       "file_or_dir": "file"
     },
     "csv_to_pickle.py": {
-      "size": 860,
+      "size": 861,
       "file_or_dir": "file"
     },
     "data.json": {
@@ -25,15 +21,11 @@
       "file_or_dir": "file"
     },
     "get_from_user.py": {
-      "size": 2368,
+      "size": 2370,
       "file_or_dir": "file"
     },
     "json_in.csv": {
       "size": 294,
-      "file_or_dir": "file"
-    },
-    "json_in.json": {
-      "size": 589,
       "file_or_dir": "file"
     },
     "json_in.pickle": {
@@ -41,7 +33,7 @@
       "file_or_dir": "file"
     },
     "json_to_csv.py": {
-      "size": 1189,
+      "size": 1191,
       "file_or_dir": "file"
     },
     "json_to_pickle.py": {
@@ -49,7 +41,7 @@
       "file_or_dir": "file"
     },
     "main.py": {
-      "size": 948,
+      "size": 809,
       "file_or_dir": "file"
     },
     "name.csv": {
@@ -65,11 +57,11 @@
       "file_or_dir": "file"
     },
     "pickle_to_csv.py": {
-      "size": 1102,
+      "size": 1103,
       "file_or_dir": "file"
     },
     "README.md": {
-      "size": 1247,
+      "size": 1249,
       "file_or_dir": "file"
     },
     "task_3.json": {
@@ -82,20 +74,6 @@
     },
     "__init__.py": {
       "size": 218,
-      "file_or_dir": "file"
-    }
-  },
-  "C:\\Users\\BETEPOK\\Documents\\Tech_Specialty\\Diving_Python\\HW_8\\HW_8": {
-    "name.csv": {
-      "size": 28,
-      "file_or_dir": "file"
-    },
-    "name.json": {
-      "size": 2,
-      "file_or_dir": "file"
-    },
-    "name.pickle": {
-      "size": 0,
       "file_or_dir": "file"
     }
   }
