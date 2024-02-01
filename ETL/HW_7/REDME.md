@@ -7,11 +7,12 @@ ETL: автоматизация подготовки данных (семина�
 Нужно с помощью аирфлоу (PythonOperator) сохранить этот график в png/jpeg.  
 Используйте пандас, считайте им таблицу из mysql, постройте график и сохраните его в указанную директорию.  
 На проверку ДЗ высылайте код и скриншоты аирфлоу выполненных задач, логов и сохраненного файла (в pdf).  
-![Dag1.png](Dag1.png)  
-![Dag2.png](Dag2.png)
-![Airflow0.png](Airflow0.png)  
-![Airflow1.png](Airflow1.png)  
-![Airflow2.png](Airflow2.png)  
-![Airflow3.png](Airflow3.png)  
-![Airflow4.png](Airflow4.png)  
-![Tab4b.png](Tab4b.png)
+  
+![Dag1.png](Screens%2FDag1.png)  
+![Dag2.png](Screens%2FDag2.png)  
+![Airflow0.png](Screens%2FAirflow0.png)  
+![Airflow1.png](Screens%2FAirflow1.png)  
+![Airflow2.png](Screens%2FAirflow2.png)  
+![Airflow3.png](Screens%2FAirflow3.png)  
+![Airflow4.png](Screens%2FAirflow4.png)  
+![Tab4b.png](Screens%2FTab4b.png)
