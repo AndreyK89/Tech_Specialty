@@ -9,7 +9,8 @@ https://www.kaggle.com/dgomonov/new-york-city-airbnb-open-data;
 и с помощью MapReduce расчитайте среднее значение и дисперсию по признаку “price”  
 (возможно потребуются ассимптотические формулы для дисперсии);
 
-https://github.com/AndreyK89/Tech_Specialty/tree/master/Big_Data/Sem_2  
+https://github.com/AndreyK89/Tech_Specialty/tree/master/Big_Data/Sem_2    
+![CMD.png](CMD.png)
   
 ![SparkMaster.png](SparkMaster.png)  
 ![SparkWorker.png](SparkWorker.png)  
