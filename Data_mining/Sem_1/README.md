@@ -1,7 +1,7 @@
 Домашнее задание
-1. Ознакомиться с некоторыми интересными API.
-https://docs.ozon.ru/api/seller/
-https://developers.google.com/youtube/v3/getting-started
+1. Ознакомиться с некоторыми интересными API.  
+https://docs.ozon.ru/api/seller/  
+https://developers.google.com/youtube/v3/getting-started  
 https://spoonacular.com/food-api  
   
 [HW_1_spoonacular.py](HW_1_spoonacular.py)
