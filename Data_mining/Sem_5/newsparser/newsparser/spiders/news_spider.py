@@ -1,15 +1,3 @@
-# import scrapy
-
-
-# class NewsSpiderSpider(scrapy.Spider):
-#     name = 'news_spider'
-#     allowed_domains = ['news.mail.ru']
-#     start_urls = ['http://news.mail.ru/']
-
-#     def parse(self, response):
-#         pass
-
-
 import scrapy
 from scrapy.http import HtmlResponse
 from news.items import NewsItem
