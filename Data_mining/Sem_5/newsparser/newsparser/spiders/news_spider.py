@@ -7,7 +7,7 @@ from scrapy.loader import ItemLoader
 class NewsSpider(scrapy.Spider):
     name = "news"
     allowed_domains = ["mail.ru"]
-    start_urls = ["https://news.mail.ru"] # ищем товары в категории Книги
+    start_urls = ["https://news.mail.ru"]
 
     def parse(self, response):
         xpath_text = '''
