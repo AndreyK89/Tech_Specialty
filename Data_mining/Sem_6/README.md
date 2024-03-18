@@ -15,6 +15,8 @@
   
 #### Решение:  
 Создан проект Scrapy unsplash_scraper, и паук unsplash_photo  
+  
+[unsplash_photo.py](unsplash_scraper%2Funsplash_scraper%2Fspiders%2Funsplash_photo.py)
 ![unsplash.png](unsplash.png)  
   
 Изменен файл settings.py  
@@ -22,8 +24,10 @@
   
 ![settings2.png](settings2.png)  
   
-Загружены изображения в папку images  
+Загружены изображения в папку images   
+  
 ![images.png](images.png)  
+![20101020_Sheep_shepherd_at_Vistonida_lake_Glikoneri_Rhodope_Prefecture_Thrace_Greece.jpg](unsplash_scraper%2Fimages%2F20101020_Sheep_shepherd_at_Vistonida_lake_Glikoneri_Rhodope_Prefecture_Thrace_Greece.jpg) 
   
 Данные сохранены в файл all_photos1.csv  
 ![all_photos.png](all_photos.png)
