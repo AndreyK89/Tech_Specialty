@@ -11,12 +11,9 @@ options = Options()
 options.add_argument('start-maximized')
 driver = webdriver.Chrome(options=options)
 
-# driver.get("https://www.mvideo.ru/product-list-page?q=%D0%B2+%D1%82%D1%80%D0%B5%D0%BD%D0%B4%D0%B5")
 driver.get("https://book24.ru/catalog/fiction-1592/")
 time.sleep(2)
-# input = driver.find_element(By.XPATH, "//input[contains(@class, 'b24-input-control__input')]") # строка поиска
-# input.send_keys("Художественная литература")
-# input.send_keys(Keys.ENTER)
+
 
 books = []
 page_count = 0
@@ -61,10 +58,6 @@ with open("books.csv", "w") as f:
         name = driver.find_element(By.XPATH, "//h1[@itemprop='name']").text
         print(name)
         author = driver.find_elements(By.XPATH, "//a[contains(@class, 'product-characteristic-link')]")[0].text
-        # more_button = wait.until(EC.presence_of_element_located((By.XPATH, 
-        #                                                          "//button[@class='product-about-short__button']")))
-        # more_button.click()
-        # about = driver.find_element(By.XPATH, "//p[contains(@xpath, '1')]").text
         xpath = "//span[contains(@class, 'product-sidebar-price__price')]"
         try:
             price = driver.find_elements(By.XPATH, xpath)[1].text
