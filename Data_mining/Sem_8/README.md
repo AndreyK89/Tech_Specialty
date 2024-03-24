@@ -30,7 +30,7 @@
   
 [HW_8.ipynb](HW_8%2FHW_8.ipynb)  
   
-![hw_8.png](HW_8%2Fhw_8.png)  
+![hw_8 .png](HW_8%2Fhw_8%20.png)  
   
 #### Созданный файл .csv  
   
