@@ -22,3 +22,15 @@
 5. Сохраните очищенный и преобразованный набор данных в новый CSV-файл под названием 'cleaned_house_prices.csv'.  
   
 
+### Решение:  
+  
+#### Исходный файл .csv  
+  
+[train.csv](HW_8%2Ftrain.csv)
+  
+[HW_8.ipynb](HW_8%2FHW_8.ipynb)  
+  
+![hw_8.png](HW_8%2Fhw_8.png)  
+#### Созданный файл .csv  
+  
+[cleaned_house_prices.csv](HW_8%2Fcleaned_house_prices.csv)
