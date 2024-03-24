@@ -31,6 +31,7 @@
 [HW_8.ipynb](HW_8%2FHW_8.ipynb)  
   
 ![hw_8.png](HW_8%2Fhw_8.png)  
+  
 #### Созданный файл .csv  
   
 [cleaned_house_prices.csv](HW_8%2Fcleaned_house_prices.csv)
