@@ -32,4 +32,6 @@
   
 [hw_9.ipynb](hw_9.ipynb)  
   
+![hw_9_1.png](hw_9_1.png)
+  
 ![hw_9.png](hw_9.png)
