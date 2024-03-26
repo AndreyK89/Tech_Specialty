@@ -28,10 +28,16 @@
   
 #### Решение:  
   
+Исходный файл :  
+[critic_reviews.csv](critic_reviews.csv)  
+  
 Файл исполнения:  
   
 [HW_9.ipynb](HW_9.ipynb)  
   
-![hw_9_1.png](hw_9_1.png)
+![hw_9_1.png](hw_9_1.png)  
+ 
+Сохраненный файл:  
+[temp.csv](temp.csv)
   
 ![hw_9.png](hw_9.png)
