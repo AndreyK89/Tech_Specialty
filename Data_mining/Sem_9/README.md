@@ -30,7 +30,7 @@
   
 Файл исполнения:  
   
-[hw_9.ipynb](hw_9.ipynb)  
+[HW_9.ipynb](HW_9.ipynb)  
   
 ![hw_9_1.png](hw_9_1.png)
   
